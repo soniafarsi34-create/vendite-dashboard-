@@ -1,1 +1,34 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Vendite</title>
+    <link rel="stylesheet" href="style.css">
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+</head>
+
+<body>
+
+<h1>📊 Analisi Vendite</h1>
+
+<div class="controls">
+    <select id="meseFilter"></select>
+    <select id="annoFilter"></select>
+    <button onclick="toggleDark()">🌙 Dark Mode</button>
+</div>
+
+<div class="dashboard">
+
+    <canvas id="lineChart"></canvas>
+    <canvas id="barChart"></canvas>
+    <canvas id="pieChart"></canvas>
+    <canvas id="scatterChart"></canvas>
+    <canvas id="areaChart"></canvas>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
